@@ -7,7 +7,6 @@ title: Home
 
 Welcome to the home page.
 
-click [this](/sshow.md)
 
 <ul>
   {% for post in site.posts %}

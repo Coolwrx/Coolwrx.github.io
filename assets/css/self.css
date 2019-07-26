@@ -1,3 +1,15 @@
 .inner{
-    padding: 20px 20px;
+    padding: 20px;
+}
+#project_title{
+    letter-spacing: 0px;
+}
+code{
+    font-family: Consolas,STsongMonaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;
+}
+body{
+    font-family: Rockwell, STZhongsong,"Myriad Pro",Calibri,Helvetica,Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Agency FB",dengxian,"Lucida Grande","Calibri",Helvetica,Arial,sans-serif
 }
