@@ -1,8 +1,11 @@
+---
+title: Home
 
+---
 
-# hello world!
+# Home page
 
-This is the first page.
+Welcome to the home page.
 
 click [this](/sshow.md)
 
