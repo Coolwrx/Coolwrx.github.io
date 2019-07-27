@@ -1,11 +1,11 @@
-<div id="header_wrap" class="outer" style="background-image: url('{{type}}/header.JPG')">
+<div id="header_wrap" class="outer" style="background-image: url('{{ include.type }}/header.JPG')">
     <header class="inner">
 
       <h1 id="project_title">{{ site.title }}</h1>
       <h2 id="project_tagline">{{ site.description }}</h2>
 
       {% if page.is_404 %}
-      <h2 id="404">{{ page.words }}</h2>
+      <h2 id="project_tagline">{{ page.words }}</h2>
       {% endif %}
 
       <nav><a href="/">Home</a> | <a href="/music/">Music</a> | <a href="/about/">About</a></nav>
