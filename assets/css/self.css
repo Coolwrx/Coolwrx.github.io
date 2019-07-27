@@ -19,7 +19,7 @@ nav{
 }
 #nav_text{
     font-size: 20px;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 0px 0px 2px white;
 }
 #nav_text:hover{
     text-shadow: 1px 1px 1px white;
