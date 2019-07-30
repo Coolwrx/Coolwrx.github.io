@@ -8,10 +8,20 @@ title: Home
 Welcome to the home page.
 
 
-<ul>
+<div id=recent_post_previews>
+
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  
+<div>
+  <a href="{{ post.url }}">
+    <div>
+    <p id=post_title>{{ post.title }}</p>
+    <p id=post_preview>{{ post.content | strip_html | truncate:200 }}</p>
+    </div>
+  </a>
+  <p id="post_msg">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr />
   {% endfor %}
-</ul>
+
+</div>

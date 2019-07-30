@@ -1,29 +1,43 @@
+/* 用 class 指向的样式，前面要加点号'.' */
 .inner{
     padding: 20px;
 }
+/* 用 id 定义的样式，前面要加井号'#' */
 #project_title{
     letter-spacing: 0px;
 }
+
 code{
     font-family: Consolas,STsongMonaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;
 }
 body{
-    font-family: SourceHanSerif-L, Rockwell, STZhongsong,"Myriad Pro",Calibri,Helvetica,Arial,sans-serif;
+    font-family: Rockwell, STZhongsong,"Myriad Pro",Calibri,Helvetica,Arial,sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: "Agency FB",dengxian,"Lucida Grande","Calibri",Helvetica,Arial,sans-serif
 }
 
 nav{
+    font-family: "Agency FB";
     color: #7a7374;
 }
 #nav_text{
     font-size: 20px;
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 1px 1px 2px white;
 }
 #nav_text:hover{
     text-shadow: 1px 1px 1px white;
 }
+
+#post_title{
+    
+}
+#post_msg{
+    font-family: postmsg;
+    font-style: italic;
+}
+
+
 
 /* Rockwell */
 @font-face{
@@ -45,4 +59,13 @@ nav{
     src: url(/assets/fonts/AGENCYB.TTF);
     font-style: normal;
     font-weight: bold;
+}
+/* Courier New */
+@font-face{
+    font-family: 'Courier New';
+    src: url(/assets/fonts/cour.ttf);
+}
+@font-face{
+    font-family: postmsg;
+    src: url(/assets/fonts/cour.subset.ttf);
 }
