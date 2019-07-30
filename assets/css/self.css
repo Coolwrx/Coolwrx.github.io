@@ -16,11 +16,16 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: "Agency FB",dengxian,"Lucida Grande","Calibri",Helvetica,Arial,sans-serif
 }
-
 nav{
     font-family: "Agency FB";
     color: #7a7374;
 }
+hr{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top: 1px solid gainsboro;
+}
+
 #nav_text{
     font-size: 20px;
     text-shadow: 1px 1px 2px white;
@@ -29,12 +34,14 @@ nav{
     text-shadow: 1px 1px 1px white;
 }
 
-#post_title{
-    
-}
 #post_msg{
     font-family: postmsg;
     font-style: italic;
+}
+#post_preview{
+    color: gray;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 
