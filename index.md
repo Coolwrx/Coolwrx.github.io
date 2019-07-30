@@ -19,7 +19,7 @@ Welcome to the home page.
     <p id="post_preview">{% if page.abstract %}{{ page.abstract }}{% else %}{{ post.content | strip_html | truncate:200 }}{% endif %}</p>
     </div>
   </a>
-  <p>{{ page.abstract }}</p>
+  <p>a{{ page.abstract }} b{{ post.abstract }}</p>
   <p id="post_msg">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 <hr />
