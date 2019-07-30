@@ -32,3 +32,17 @@ nav{
     font-style: normal;
     font-weight: normal;
 }
+
+/* Agency */
+@font-face{
+    font-family: Agency FB;
+    src: url(/assets/fonts/AGENCYR.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: Agency FB;
+    src: url(/assets/fonts/AGENCYB.TTF);
+    font-style: normal;
+    font-weight: bold;
+}
