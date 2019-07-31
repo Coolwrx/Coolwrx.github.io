@@ -51,5 +51,5 @@ http://miwifi.com/miwifi_open.html
 ````
 下滑此页面，找到“开启 SSH 工具”，并登录小米账号  
 截官方教程
-![小米路由器获取 SSH](/media/img/小米路由器获取-SSH.PNG)
+![小米路由器获取 SSH](/media/img/小米路由器获取 SSH.PNG)
 记下 root 密码，备用
