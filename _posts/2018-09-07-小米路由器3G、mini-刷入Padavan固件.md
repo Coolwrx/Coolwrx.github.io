@@ -49,7 +49,6 @@ Breed Bootloader 是一个第三方 Bootloader ，功能齐全，界面友好，
 ````
 http://miwifi.com/miwifi_open.html
 ````
-
 下滑此页面，找到“开启 SSH 工具”，并登录小米账号  
 截官方教程
 
