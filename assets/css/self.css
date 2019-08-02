@@ -29,12 +29,32 @@ img{
     max-width: 100%;
 }
 
+/* 旧的导航栏，废弃
 #nav_text{
     font-size: 20px;
     text-shadow: 1px 1px 2px white;
 }
 #nav_text:hover{
     text-shadow: 1px 1px 1px white;
+}
+*/
+.nav_bar{
+    padding: 10px;
+}
+.nav_bar a{
+    color: gainsboro;
+}
+.nav_bar a:hover{
+    color: ghostwhite;
+    text-decoration: none;
+}
+.nav_list{
+    float: right;
+}
+.nav_list li{
+    float: left;
+    list-style: none;
+    padding: 0 10px;
 }
 
 #post_msg{
