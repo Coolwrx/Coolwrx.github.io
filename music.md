@@ -1,4 +1,7 @@
-
+---
+layout: music
+title: Welcome to my music word!
+---
 ## Music
 
   {% for post in site.albums %}
