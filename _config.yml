@@ -3,5 +3,5 @@ is_project_page: false
 title: ifheart's blog
 description: "所谓硬核，即是对于未知，习惯性地摸索和钻研。"
 collections:
-  music:
+  musics:
     output: true
