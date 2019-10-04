@@ -3,7 +3,7 @@ layout: music
 title: Welcome to my music word!
 ---
 
-欢迎关注我的[网易云音乐]("https://music.163.com/#/artist?id=12228621")主页！
+欢迎关注我的[网易云音乐](https://music.163.com/#/artist?id=12228621)主页！
 
 ## Check out all my music
 
