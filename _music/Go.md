@@ -3,6 +3,7 @@ layout: music
 title: "Go! test 4"
 abstract: "在电的道路上不断探索，甚至还敢加滤波"
 163dj_id: "2062881700"
+date: "2019-08-28"
 tags: 
     -音乐
 ---
