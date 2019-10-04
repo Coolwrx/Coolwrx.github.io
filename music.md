@@ -5,8 +5,6 @@ title: Welcome to my music word!
 
 欢迎关注我的[网易云音乐](https://music.163.com/#/artist?id=12228621)主页！
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=4&id=793345643&auto=0&height=430"></iframe>
-
 ## Check out all my music
 
 {% for mu in site.music %}
