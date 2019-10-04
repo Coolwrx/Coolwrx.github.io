@@ -4,23 +4,9 @@ title: Welcome to my music word!
 ---
 ## Check out all my music
 
-{% site.posts | sort: "date", "first" %}
-
-  {% for post in site.posts %}
-  
-<div>
-  <a href="{{ post.url }}">
-    <div>
-    <p id="post_title">{{ post.title }}</p>
-    <p id="post_preview">{% if post.abstract %}{{ post.abstract }}{% else %}{{ post.content | strip_html | truncate:200 }}{% endif %}</p>
-    </div>
-  </a>
-  <p id="post_msg">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr />
-  {% endfor %}
 
 {% for mu in site.music %}
+{{ site.music | sort: "title", "last" }}
 <div>
   <a href="{{ mu.url }}">
     <div>
