@@ -4,7 +4,7 @@ title: Welcome to my music word!
 ---
 ## Check out all my music
 
-{% site.music | sort: 'date', 'last' %}
+{% site.music | sort: 'date', 'first' %}
 {% for mu in site.music %}
 <div>
   <a href="{{ mu.url }}">
