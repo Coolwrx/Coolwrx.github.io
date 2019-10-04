@@ -6,7 +6,7 @@ title: Welcome to my music word!
 
 
 {% for mu in site.music %}
-{{ site.music | sort: "title", "last" }}
+{{ site.music | sort: "title", "first" }}
 <div>
   <a href="{{ mu.url }}">
     <div>
