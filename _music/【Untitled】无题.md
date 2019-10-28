@@ -12,7 +12,7 @@ tags:
 
 这个曲子没什么故事，甚至都不是一首曲子
 
-[点击下载音频](/media/audio/【Untitled】无题)
+[点击下载音频](/media/audio/【Untitled】无题.mp3)
 
 ## Lyrics
 ### Intro  
