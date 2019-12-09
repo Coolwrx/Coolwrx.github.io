@@ -65,9 +65,18 @@ http://miwifi.com/miwifi_open.html
 
 ### 下载 Breed Bootloader、Xshell、WinSCP
 
-Breed Bootloader <https://breed.hackpascal.net/>  
-Xshell <https://www.netsarang.com/download/software.html>  
-WinSCP <https://winscp.net/eng/download.php>
+Breed Bootloader
+````
+<https://breed.hackpascal.net/>
+````
+Xshell
+````
+<https://www.netsarang.com/download/software.html>
+````
+WinSCP
+````
+<https://winscp.net/eng/download.php>
+````
 
 在下载页面中找到你的设备，下载至本地
 
@@ -123,10 +132,10 @@ mtd -r write breed-***.bin Bootloader
 
 成功后会自动重启，并默认开启无线连接，参数如下
 
-> 网关： 192.168.123.1
-> 管理员账号、密码： admin / admin
-> Wifi SSID 名称： PDCN / PDCN-5G
-> 默认 Wifi 密码： 123456789
+> 网关： 192.168.123.1  
+> 管理员账号、密码： admin / admin  
+> Wifi SSID 名称： PDCN / PDCN-5G  
+> 默认 Wifi 密码： 123456789  
 
 用浏览器访问 192.168.123.1 或 my.router 即可进入 Padavan 后台管理面板  
 大概长这个样子：
