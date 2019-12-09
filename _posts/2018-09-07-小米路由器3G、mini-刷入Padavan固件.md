@@ -49,6 +49,7 @@ Breed Bootloader 是一个第三方 Bootloader ，功能齐全，界面友好，
 - 刷入最新开发版 Rom  
 同上一步，下载最新的开发版 Rom，在路由器后台管理面板刷入
 - 开启 SSH 工具
+[小米官方 SSH 工具](http://miwifi.com/miwifi_open.html)
 ````
 http://miwifi.com/miwifi_open.html
 ````
@@ -65,18 +66,18 @@ http://miwifi.com/miwifi_open.html
 
 ### 下载 Breed Bootloader、Xshell、WinSCP
 
-Breed Bootloader
-
-<https://breed.hackpascal.net/>
-
-Xshell
-
-<https://www.netsarang.com/download/software.html>
-
-WinSCP
-
-<https://winscp.net/eng/download.php>
-
+[Breed Bootloader](https://breed.hackpascal.net)
+````
+https://breed.hackpascal.net
+````
+[Xshell](https://www.netsarang.com/download/software.html)
+````
+https://www.netsarang.com/download/software.html
+````
+[WinSCP](https://winscp.net/eng/download.php)
+````
+https://winscp.net/eng/download.php
+````
 
 在下载页面中找到你的设备，下载至本地
 
@@ -137,7 +138,7 @@ mtd -r write breed-***.bin Bootloader
 > Wifi SSID 名称： PDCN / PDCN-5G  
 > 默认 Wifi 密码： 123456789  
 
-用浏览器访问 192.168.123.1 或 my.router 即可进入 Padavan 后台管理面板  
+用浏览器访问 <192.168.123.1> 或 <my.router> 即可进入 Padavan 后台管理面板  
 大概长这个样子：
 
 ![Padavan面板.PNG](/media/img/180907-6-padavan-面板.png)
