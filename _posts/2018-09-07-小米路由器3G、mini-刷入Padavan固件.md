@@ -55,7 +55,7 @@ http://miwifi.com/miwifi_open.html
 下滑此页面，找到“开启 SSH 工具”，并登录小米账号  
 截官方教程
 
-![小米路由器获取 SSH](/media/img/小米路由器获取 SSH.PNG)
+![小米路由器获取 SSH](/media/img/180907-1-小米路由器获取ssh.png)
 
 记下 root 密码，备用
 
@@ -71,7 +71,7 @@ WinSCP <https://winscp.net/eng/download.php>
 
 在下载页面中找到你的设备，下载至本地
 
-![Breed Bootloader 下载](/media/img/Breed Bootloader 下载.PNG)
+![Breed Bootloader 下载](/media/img/180907-2-breed-bootloader下载.png)
 
 Xshell 和 WinSCP 均为（教育版）免费软件，请自行尝试下载安装
 
@@ -79,7 +79,7 @@ Xshell 和 WinSCP 均为（教育版）免费软件，请自行尝试下载安�
 WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存里）  
 运行 WinSCP，添加路由器站点
 
-![WinSCP新建站点](/media/img/WinSCP新建站点.PNG)
+![WinSCP新建站点](/media/img/180907-3-winscp-新建站点.png)
 
 其中：
 
@@ -93,7 +93,7 @@ WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存
 将之前下载的 Breed Bootloader 复制到路由器的 /tmp 目录下  
 运行 Xshell，添加路由器会话
 
-![Xshell新建会话](media/img/Xshell新建会话.PNG)
+![Xshell新建会话](media/img/180907-4-xshell-新建会话.png)
 
 与 WinSCP 的操作相似，主机为 192.168.31.1，端口使用默认的 22 号端口  
 单击“连接”后，将会弹出 SSH 安全警告，选择“接受并保存”
@@ -101,7 +101,7 @@ WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存
 用户名为 root，密码为先前记录的 SSH root 密码  
 如果一切顺利，你将会看到如下界面 ARE U OK ?
 
-![小米路由器SSH界面.png](media/img/小米路由器SSH界面.png)
+![小米路由器SSH界面.png](media/img/180907-5-小米路由器ssh界面.png)
 
 在命令行依次输入
 
@@ -131,7 +131,7 @@ mtd -r write breed-***.bin Bootloader
 用浏览器访问 192.168.123.1 或 my.router 即可进入 Padavan 后台管理面板  
 大概长这个样子：
 
-![Padavan面板.PNG](media/img/Padavan面板.PNG)
+![Padavan面板.PNG](media/img/180907-6-padavan-面板.png)
 
 -----
 转载请注明出处
