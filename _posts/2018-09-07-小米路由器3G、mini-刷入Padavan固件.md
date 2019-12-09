@@ -66,17 +66,17 @@ http://miwifi.com/miwifi_open.html
 ### 下载 Breed Bootloader、Xshell、WinSCP
 
 Breed Bootloader
-````
+
 <https://breed.hackpascal.net/>
-````
+
 Xshell
-````
+
 <https://www.netsarang.com/download/software.html>
-````
+
 WinSCP
-````
+
 <https://winscp.net/eng/download.php>
-````
+
 
 在下载页面中找到你的设备，下载至本地
 
@@ -102,7 +102,7 @@ WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存
 将之前下载的 Breed Bootloader 复制到路由器的 /tmp 目录下  
 运行 Xshell，添加路由器会话
 
-![Xshell新建会话](media/img/180907-4-xshell-新建会话.png)
+![Xshell新建会话](/media/img/180907-4-xshell-新建会话.png)
 
 与 WinSCP 的操作相似，主机为 192.168.31.1，端口使用默认的 22 号端口  
 单击“连接”后，将会弹出 SSH 安全警告，选择“接受并保存”
@@ -110,7 +110,7 @@ WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存
 用户名为 root，密码为先前记录的 SSH root 密码  
 如果一切顺利，你将会看到如下界面 ARE U OK ?
 
-![小米路由器SSH界面.png](media/img/180907-5-小米路由器ssh界面.png)
+![小米路由器SSH界面.png](/media/img/180907-5-小米路由器ssh界面.png)
 
 在命令行依次输入
 
@@ -140,7 +140,7 @@ mtd -r write breed-***.bin Bootloader
 用浏览器访问 192.168.123.1 或 my.router 即可进入 Padavan 后台管理面板  
 大概长这个样子：
 
-![Padavan面板.PNG](media/img/180907-6-padavan-面板.png)
+![Padavan面板.PNG](/media/img/180907-6-padavan-面板.png)
 
 -----
 转载请注明出处
