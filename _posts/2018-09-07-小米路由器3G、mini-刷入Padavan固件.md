@@ -23,7 +23,10 @@ Rom 下载
 http://opt.cn2qq.com/padavan/
 ````
 
-##为什么要刷 Padavan 固件？
+
+
+## 为什么要刷 Padavan 固件？
+
 折腾是一件很有意思的事情  
 安卓版的 ShadowSocksR 太耗电了，无法后台常驻  
 解决 Xbox 等主机的网络加速问题  
@@ -55,3 +58,80 @@ http://miwifi.com/miwifi_open.html
 ![小米路由器获取 SSH](/media/img/小米路由器获取 SSH.PNG)
 
 记下 root 密码，备用
+
+## 刷入 Breed Bootloader
+
+*需要使用有线方式连接至路由器
+
+### 下载 Breed Bootloader、Xshell、WinSCP
+
+Breed Bootloader <https://breed.hackpascal.net/>  
+Xshell <https://www.netsarang.com/download/software.html>  
+WinSCP <https://winscp.net/eng/download.php>
+
+在下载页面中找到你的设备，下载至本地
+
+![Breed Bootloader 下载](/media/img/Breed Bootloader 下载.PNG)
+
+Xshell 和 WinSCP 均为（教育版）免费软件，请自行尝试下载安装
+
+### 连接至路由器
+WinSCP 是一款开源的SFTP客户端（用来把文件传到路由器的闪存里）  
+运行 WinSCP，添加路由器站点
+
+![WinSCP新建站点](/media/img/WinSCP新建站点.PNG)
+
+其中：
+
+- 将文件协议更改为 SCP 协议
+- 主机名即为网关地址，小米路由器默认为 192.168.31.1
+- 用户名为 root，密码为先前记下的 SSH root 密码
+
+单击“登录”，即可以图形界面方式登陆至路由器
+
+### 刷写 Breed Bootloader
+将之前下载的 Breed Bootloader 复制到路由器的 /tmp 目录下  
+运行 Xshell，添加路由器会话
+
+![Xshell新建会话](media/img/Xshell新建会话.PNG)
+
+与 WinSCP 的操作相似，主机为 192.168.31.1，端口使用默认的 22 号端口  
+单击“连接”后，将会弹出 SSH 安全警告，选择“接受并保存”
+
+用户名为 root，密码为先前记录的 SSH root 密码  
+如果一切顺利，你将会看到如下界面 ARE U OK ?
+
+![小米路由器SSH界面.png](media/img/小米路由器SSH界面.png)
+
+在命令行依次输入
+
+````
+cd /tmp
+mtd -r write breed-***.bin Bootloader
+````
+
+请将 breed-***.bin 更换为你下载的 Breed Bootloader 文件名  
+（或者，你可以使用“自动填充”，输入 mtd -r write breed 后按下 TAB 键
+
+刷写完成后，路由器将会重新启动，此时将 PC 以有线方式连接至路由器，打开命 令提示符，运行 ping 192.168.1.1 -t （因为 Breed Bootloader 还没有启动， 所以 ping 的反馈将是“请求超时”）。按如下步骤操作
+1. 断开路由器电源，用尖锐物按住 reset 键不松开，接通电源；
+2. 保持按住 reset 键，直至路由器指示灯开始闪烁，即表明 Breed 启动成功， 此时命令提示符将提示小于 1ms 的延迟；
+3. 关闭命令提示符，打开浏览器并访问 192.168.1.1，即可进入 Breed 控制台；
+
+## 刷入 Padavan 固件
+用 Web 方式进入 Breed 控制台（浏览器访问 http://192.168.1.1 ）后，依次单击：固件更新 / 常规固件 / 勾选固件复 选框 / 浏览…，上传之前下载好的 Padavan 固件包，开始刷写
+
+成功后会自动重启，并默认开启无线连接，参数如下
+
+> 网关： 192.168.123.1
+> 管理员账号、密码： admin / admin
+> Wifi SSID 名称： PDCN / PDCN-5G
+> 默认 Wifi 密码： 123456789
+
+用浏览器访问 192.168.123.1 或 my.router 即可进入 Padavan 后台管理面板  
+大概长这个样子：
+
+![Padavan面板.PNG](media/img/Padavan面板.PNG)
+
+-----
+转载请注明出处
