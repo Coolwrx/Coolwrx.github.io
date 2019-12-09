@@ -138,7 +138,7 @@ mtd -r write breed-***.bin Bootloader
 > Wifi SSID 名称： PDCN / PDCN-5G  
 > 默认 Wifi 密码： 123456789  
 
-用浏览器访问 <192.168.123.1> 或 <my.router> 即可进入 Padavan 后台管理面板  
+用浏览器访问 <http://192.168.123.1> 或 <http://my.router> 即可进入 Padavan 后台管理面板  
 大概长这个样子：
 
 ![Padavan面板.PNG](/media/img/180907-6-padavan-面板.png)
